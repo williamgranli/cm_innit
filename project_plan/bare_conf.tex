@@ -125,12 +125,12 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+  \usepackage{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+  \graphicspath{{./sections/images/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+  %\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
@@ -347,6 +347,7 @@
 
 
 \begin{document}
+
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
@@ -384,6 +385,7 @@
 \author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
 Homer Simpson\IEEEauthorrefmark{2},
 James Kirk\IEEEauthorrefmark{3},
+John Burchell\IEEEauthorrefmark{5},
 Montgomery Scott\IEEEauthorrefmark{3} and
 Eldon Tyrell\IEEEauthorrefmark{4}}
 \IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
@@ -423,7 +425,7 @@ The abstract goes here.
 
 % no keywords
 
-
+\input{./sections/literature_overview.tex}
 
 
 % For peer review papers, you can put extra information on the cover
