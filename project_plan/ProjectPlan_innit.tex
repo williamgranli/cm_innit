@@ -1,0 +1,128 @@
+%% This style is provided for the ICSE 2015 main conference,
+%% ICSE 2015 co-located events, and ICSE 2015 workshops.
+
+
+
+\documentclass[conference]{IEEEtran}
+
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+%Swedish letters for Pätröck Bäckström
+\usepackage[utf8]{inputenc}
+%Subfiles (sections)
+\usepackage{subfiles}
+%For generating lorem ipsum
+\usepackage{blindtext}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage{graphicx}
+  % declare the path(s) where your graphic files are
+  \graphicspath{{./sections/images/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  %\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Project Plan - innit}
+
+
+% author names and affiliations
+
+\author{\IEEEauthorblockN{William Granli\IEEEauthorrefmark{1},
+Patrik Bäckström\IEEEauthorrefmark{2},
+Carl Berglund\IEEEauthorrefmark{3},
+John Burchell\IEEEauthorrefmark{4},
+Ioannis Kellaris\IEEEauthorrefmark{5} and
+Olof Ekelund\IEEEauthorrefmark{6}}
+}
+
+
+
+
+
+% make the title area
+\maketitle
+
+%Section start
+\section{Timeline}
+\subfile{./sections/timeline.tex}
+%Section end
+
+%Section start
+\section{Research Methodology}
+\subfile{./sections/research_methodology.tex}
+%Section end
+
+%Section start
+\section{Literature Overview}
+\subfile{./sections/literature_overview.tex}
+%Section end
+
+	
+
+
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+
+
+
+% that's all folks
+\end{document}
+
+
