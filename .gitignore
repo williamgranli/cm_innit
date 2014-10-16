@@ -4,5 +4,6 @@
 *~
 *.dvi
 .DS_Store
-.fdb_latexmk
+*.fdb_latexmk
 *.gz
+*.fls
