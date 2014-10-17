@@ -1,15 +1,6 @@
 %% This style is provided for the ICSE 2015 main conference,
 %% ICSE 2015 co-located events, and ICSE 2015 workshops.
-
-
-
 \documentclass[conference]{IEEEtran}
-
-
-
-
-
-
 
 % *** CITATION PACKAGES ***
 %
@@ -37,7 +28,6 @@
 %For generating lorem ipsum
 \usepackage{blindtext}
 
-
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
@@ -59,14 +49,10 @@
   % \DeclareGraphicsExtensions{.eps}
 \fi
 
-
-
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-
 \begin{document}
-
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
@@ -115,20 +101,16 @@ Ioannis Kellaris\IEEEauthorrefmark{6}}
 %Section end
 
 
-\begin{thebibliography}{1}
+%Section start
+\subfile{./sections/appendix.tex}
+%Section end
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\begin{thebibliography}{1}
+%\bibitem{IEEEhowto:kopka}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\end{thebibliography}
-
-
-
-
-
-
-
+%\end{thebibliography}
 
 % that's all folks
 \end{document}
