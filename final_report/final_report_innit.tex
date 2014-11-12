@@ -1,0 +1,111 @@
+%% This style is provided for the ICSE 2015 main conference,
+%% ICSE 2015 co-located events, and ICSE 2015 workshops.
+\documentclass[conference]{IEEEtran}
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+%Swedish letters for Pätröck Bäckström
+\usepackage[utf8]{inputenc}
+%Subfiles (sections)
+\usepackage{subfiles}
+%For generating lorem ipsum
+\usepackage{blindtext}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage{graphicx}
+  % declare the path(s) where your graphic files are
+  \graphicspath{{./sections/images/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  %\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Agile Change and Increased Testing in a Model-driven Software Development Environment ;)}
+
+
+% author names and affiliations
+
+\author{\IEEEauthorblockN{
+Carl Berglund\IEEEauthorrefmark{1},
+John Burchell\IEEEauthorrefmark{2},
+Patrik Bäckström\IEEEauthorrefmark{3},
+Olof Ekelund\IEEEauthorrefmark{4},
+William Granli\IEEEauthorrefmark{5} and
+Ioannis Kellaris\IEEEauthorrefmark{6}}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{1}kalle.berglund@gmail.com}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{2}john.a.burchell@gmail.com}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{3}mail@patrikbackstrom.com}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{4}olof.ekelund84@gmail.com}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{5}william.granli@gmail.com}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{6}jani.kellaris@gmail.com }
+
+
+
+}
+
+
+
+% make the title area
+\maketitle
+
+
+%Abstract
+\subfile{./sections/abstract.tex}
+
+
+
+%Introduction
+\subfile{./sections/introduction.tex}
+
+
+%Related Work
+\subfile{./sections/related_work.tex}
+
+
+
+% that's all folks
+\end{document}
+
+
