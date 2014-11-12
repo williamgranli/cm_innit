@@ -10,4 +10,19 @@
 In Xiaocheng et al.'s "Agile Development of Secure Web Applications" [adoswa] feature-driven development is introduced as a part of the process. Xiaocheng et al. specifically discuss agile development in the context of secure systems (defined as "a system that is protected against specific undesired outcomes") [adoswa] which is an attribute shared with Ericsson's system. Hribar et al. [ftriauotasld] have presented an overview of Ericsson's approach to One Track development which mainly is based on internal Ericsson documentation. Hribar et al. [ftriauotasld] introduce a set of main principles for One Track that are related to continuous integration and agile, and the focus is mainly set on how to successfully implement and develop according to the One Track development strategy. Although a large part of Ericsson's software is developed through MDSD, Hribar et al. do not identify any differences in how well One Track works in combination with MDSD compared to non-MDSD. Even though MDSD is common in the domain of telecommunications, the characteristics of a MDSD environment are not mentioned as important factors to consider in the litterature related to One Track and feature-driven development. 
 
 
+\subsection*{Component Testing}
+[small intro into testing stuff – not sure if i'll be doing the introduction or not!]
+
+[componenttestability 1] author describes problems with standard component testing. Making the tests reusable is the greatest challenge as the tests are usually dependant upon a given framework. As an alternative, the author suggests using a technique referred to as Built-In-Tests (BIT). BIT is an alternative to using a framework as it tends to be cheaper and faster to write while not requiring an external suite or framework to run the tests; they are instead accessed with an interface into the appropriate class or structure.
+
+Model driven testing techniques commonly involve the use of a modelling language, test generation, a target and tool support [componenttesting:3]. 
+
+Yuan et al. describe a method of Model Driven Component Testing (MDCT) with the combination The UML Testing Profile (UTP) [componenttesting:3:1] and the Testing and Test Control Notation Version 3. These concepts are then used to define a framework from which automatic test cases can be derived and then the Model-Driven Architecture (MDA) approach is applied [componenttesting:3:2].
+
+During 2004-2006, AUTHORS performed research in conjunction with Ericsson to help investigate faults or Trouble Reports (TRs) and their frequencies in a large, complex system. They found that designers at component testing levels do not find faults related to unclear specifications. These faults made up \%46.6 of all software faults discovered in that specific case study. These types of faults are therefore discovered later in the testing process. The key reason they give is that it is very hard for a developer to design, implement and specify code given the complexity of the environment and the knowledge of the context which is required. 
+
+They found that during the year 2005, where there was a strong influence on component testing, quality drastically improved in the software, especially in terms of faults. The authors ultimately came to the conclusion that unit and component testing have next to no chance of finding a majority of faults which stem from a lack of knowledge and context. They further concluded that component testing is limited in very complex systems and it highlights the need for higher level integration and systems testing along side component testing.
+
+Given this and the other previous work, a simple hypothesis we would like to explore is whether or not the adoption of MDD by Ericsson has lead to a hindrance or an improvement when it comes to testing using component testing methods.
+
 \end{document}
