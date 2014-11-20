@@ -45,6 +45,29 @@ They found that during the year 2005, where there was a strong influence on comp
 
 Given this and the other previous work, a simple hypothesis we would like to explore is whether or not the adoption of MDD by Ericsson has lead to a hindrance or an improvement when it comes to testing using component testing methods.
 
+\subsection*{Continuous Integration}
+Continuous Integration (CI) was suggested by Grady Booch in 1993 [ooaadawa]. Later on the idea was adopted by Kent Beck as a part of extreme programming [epahdosd]. In traditional software processes integration would be done only a few times during a project to mark the end of an iteration or finish of a prototype or similar situations or in the worst case it would just be latched on to the end of the project and carried out in one “big bang”. This can cause big problems because there is a high risk that different components or modules will need a lot of work to function properly together. Martin Fowler has defined Continuous Integration (CI) as: 
+
+“a software development practice where members of a team  integrate  their  work  frequently,  usually  each person  integrates  at  least  daily  -  leading  to  multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.” [ci]
+
+This definition tells us that daily integration, automated builds and automated testing are all part of CI. It is therefore crucial for an organization to have the proper frameworks ready before starting CI. Without the necessary tools CI isn’t going to work. Something worth noting is that because you need to test whenever you build you will need to develop an extensive test suite which means you will have to do requirements engineering early on. Martin Fowler also has a list of suggested practices [ci]: 
+
+1.	Maintain a Single Source Repository
+2.	Automate the Build
+3.	Make Your Build Self-Testing
+4.	Everyone Commits To the Mainline Every Day
+5.	Every Commit Should Build the Mainline on an Integration Machine
+6.	Fix Broken Builds Immediately
+7.	Keep the Build Fast
+8.	Test in a Clone of the Production Environment
+9.	Make it Easy for Anyone to Get the Latest Executable
+10.	Everyone can see what's happening
+11.	Automate Deployment
+
+Now we’re not going into detail about these practices, but it does say a lot about what CI means. 
+
+We have not been able to find any research on how CI works with Model Driven Software Development specifically, however CI is one of the core practices of Agile. If you’re doing Agile with frequent releases you will need to have a way to integrate quickly. So CI seems to be essential to Agile, unfortunately we can’t find any relevant information on how CI relates to MDSD.
+
 \subsection*{Impact of Agile Development on MDSD}
 
 Agile Development (AD) and MDSD both address the issues of high change rates, time-to-market, increased return on investment (ROI) and high quality software [coasd]. However, the solutions that are proposed by AD differ to those proposed by MDSD [coasd]. Since AD has been developed to suit the object-oriented paradigm, Stojanovic, Dahanayake and Sol support that the higher level of abstraction that can be achieved through MDSD can highly support agile principles [coasd]. They discuss the separation of concerns that can be achieved with the use of components [coasd], a point that is also raised by Diarmuid Corcoran, who talks about MDSD experiences at Ericsson [mfa]. He states that two major complexities exist within the large-scale organization that is Ericsson; firstly, the complexity with regard to the number of people involved in a project, and secondly the domain complexity [mfa]. Corcoran states that by incorporating a modeling based development paradigm, the problems arising from these complexities are solved. 
