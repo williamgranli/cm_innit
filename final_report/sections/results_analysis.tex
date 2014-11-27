@@ -4,26 +4,46 @@
 
 \section{Results Analysis}
 
-Small Introduction, one paragraph, hypothesis, which data was used, how it was analysed.
+In this section, we will present our survey results, on the basis of which we hope to identify the applicability of process and design activities to the MC and MDSD paradigms. Our survey questions have provided us with data on five process and design activities: continuous integration (CI), cross-functional teams (CF), feature development (FD), unit testing (UT) and component testing (CT). We have measured the impact of these activities with regard to performance and productivity, quality of deliverables, personal fulfillment and ease of implementation.
 
-Demographics, who, how many, where, groupings
+The survey data came from twenty questionnaires which were sent to employees at Ericsson, specifically those working in the EPG department. Our contact at Ericsson distributed them between the MC and MDSD practitioners. We received fourteen replies, and out of those six were from the MDSD practitioners and eight from MC. Out of those responses we deemed that four responses from the MDSD practitioners were suitable and that seven from the MC practitioners were also suitable. Suitability was derived from how complete the answer sets were, for example, most of the responses which were stricken were missing well over 50\% of the answers and thus were unsuited for analysis.
 
-Explain what we measured, average, why things were taken out (how we decided that).
+When analysing the data we decided not to perform any complicated statistical analysis. The primary motivation for this was the small scale of the data set that we had collected; had we collected more, a proper statistical analysis might have been appropriate. To generate our averages, we simply calculated the mean responses from grouping of answers. We generated an average for each of MDSD and MC in relation to the design and process questions. We then generated an average of all the questions and finally generated averages from each question block for MDSD and MC ending with an average of both of these together.
 
-State any direct correlations or evidence that supports our hypothesis.
+The final part of the analysis involved an interview with our contact at Ericsson. The interview provided additional insight into some of the design and process elements which they utilise, especially those that we were particularly interested in.
 
-Present the results in a table
+With regard to cross-functional teams, the interviewee seemed to be in agreement with the positive responses of both MC and MDSD practitioners, since the interviewee indicated that their change is completed and part of the culture at EPG. However, considering the discrepancy of responses on continuous integration, the interviewee expressed that the discontent of MC practitioners was unexpected, since the interviewee believed that continuous integration should be as applicable to the MC paradigm as to the MDSD paradigm. Overall, the interview that we conducted with our contact at EPG helped us to formulate our assumptions about the survey results. 
+%\usepackage{tkiz}
 
-P - Performance
-Q - Quality of what you deliver
-PF - Personal Fulfilment
-EOI - Ease of Implementation
+\begin{tikzpicture}
+\begin{axis}[
+	every axis plot post/.style={/pgf/number format/fixed},
+	symbolic x coords={CI, CF, FD, UT, CT},
+	ylabel=Rating Average,
+	enlargelimits=0.15,
+	legend style={at={(0.5,-0.1)},
+	anchor=north,legend columns=-1},
+	%ybar interval=0.7,
+	ybar,
+	bar width=12pt
+]
+\addplot 
+	coordinates {(CI,3.9) (CF,4.1)
+		 (FD,2.9) (UT,3.6) (CT,3.7)};
+\addplot 
+	coordinates {(CI,3.9) (CF,3.6) 
+		(FD,4.1) (UT,2.6) (CT,3.4)};
+\legend{MC,MDSD}
+\end{axis}
+\end{tikzpicture}
+
+\textit{``Response Average of MC and MDSD respondents for Process and Design Activities''}
 
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[h]
-\caption{Table 1 - Process Activity Survey Results}
+\caption{Process Activity Survey Results}
 \centering
 \begin{tabular}{@{}l|c|c|c|@{}}
 \cmidrule(l){2-4}
@@ -47,7 +67,7 @@ EOI - Ease of Implementation
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[h]
-\caption{Table 2 - Design Activity Survey Results}
+\caption{Design Activity Survey Results}
 \centering
 \begin{tabular}{@{}l|c|c|c|@{}}
 \cmidrule(l){2-4}
@@ -66,7 +86,7 @@ EOI - Ease of Implementation
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
 \begin{table}[h]
-\caption{Table 3 - Design and Process Group Averages}
+\caption{Design and Process Group Averages}
 \centering
 \begin{tabular}{@{}c|c|c|c|@{}}
 \cmidrule(l){2-4}
@@ -79,30 +99,15 @@ EOI - Ease of Implementation
 \end{tabular}
 \end{table}
 
+Table legend:
+P - Performance
+Q - Quality of what you deliver
+PF - Personal Fulfilment
+EOI - Ease of Implementation
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\textit{``Using a conversion from ordinal to numerical entails a risk that subsequent analysis will give misleading results.''}[Kitchenham, Barbara A., et al.]
 
 \section{Discussion}
 
-Intro to discussion, process then design, why.
 In this section, we will discuss the findings of our survey, and attempt to answer our research questions. We will conclude this section with a discussion of our research limitations and our recommendations to Ericsson from the perspective of change management. 
 
 We have distinguished between process and design related activities at Ericsson. This is done so we can discuss the related activities together in logical groupings.
@@ -133,16 +138,11 @@ In answer to our main hypothesis, we feel, based on the evidence obtained, that 
 
 \subsection*{Limitations}
 
-The results and analysis phase brought to light some key limitations which have had a profound affect on the whole study. The
+As with all studies there are limitations and ours is no exception. Our biggest and most obvious limitation is the fact that we had such a small sample size. The size was further reduced because of usability issues highlighted previously. These limitations mean that we cannot make any generalisations and the assumptions we do make need to be backed up with larger, more in depth studies. Another limitation is the fact that we only focus on a small subset of Ericsson itself. While suitable for this study, focusing solely upon the EPG department is not a good basis to make claims about the whole of Ericsson.
 
-Sample Size
+The questionnaires are another source of limitations. The single largest limitation is that we did not decide the distribution of the questionnaires ourselves; our contact at Ericsson distributed them for us. This caused a limitation as we cannot say with any certainty how the questionnaires were distributed and as such we cannot use that information to help us draw any conclusions. Another limitation factor are the questions within the questionnaires themselves. In hindsight the questions could have been more precise and could have probed a little deeper in some areas. One interesting point that we found in research was Kitchenham et al.[Kitchenham] arguing against the types of ordinal scales that we used, especially when converting the questions into numerical data to be used for comparison. Kitchenham et al. suggest that by doing this, there is a risk that the results can lose information [Kitchenham].
 
-Control over distribution
-We had no control over the recipients of the surveys; they were handed out for us via Jesper.
-
-We had one interview which limits the responses as we have nothing else to compare the answers with.
-
-EPG - We only looked at one subset of Ericsson.
+Having only one interview is another of the limitations facing our study. Had we the opportunity for more, it might have been possible to draw upon more interesting conclusions from both our results and the interviews. As it stands now we only have the opinion and answers from a single member of the EPG organisation. In order to make sound assumptions and find reasonable conclusions we would obviously need to perform further interviews with a larger spread of developers.
 
 \subsection*{Recomendations (To Ericsson according to CM)}
 
