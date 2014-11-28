@@ -5,22 +5,28 @@
 WIP
 Add introductory text
 
-\subsection*{General}
+\subsection{General}
 Ericsson operates in the domain of communications technology, and their “main” products are in the domains of mobility, broadband and cloud-based services \cite{etc, ecf}. Ericsson has 117,508 employees (as of September 30, 2014), 25,300 of which work in R\&D (Research and Development) \cite{etc}.
-
+\\* 
+\\* 
 Our research has been conducted at the EPG (Evolved Packet Gateway) department of Ericsson. The EPG department consists of approximately 700 employees, and the largest majority of them work on software development-related tasks (J. Derehag, personal communication, November 19, 2014). The EPG department delivers and maintains the EPG product which is a part of Ericsson’s product for deployment of LTE (Long Term Evolution) networks \cite{eepg}. The EPG product serves as a gateway between Ericsson’s packet core network and other packet data networks, such as the Internet \cite{eepg}. The EPG product is utilized in technologies such as 2G, 2G+, 3G, 4G and Wi-Fi hotspots \cite{eepg}.
 
-\subsection*{MDSD}
+\subsection{MDSD}
 The numerous subsystems that comprise the EPG product are developed with both manual coding and MDSD. The distribution between manual coding and MDSD in EPG differs depending on how it is measured. According to our contact at Ericsson the distribution of employees contributing to the code base, the distribution is close to 1:1 (J. Derehag, personal communication, November 19, 2014). However, the number of teams developing with manual coding and MDSD is approximately 1:2 (J. Derehag, personal communication, November 19, 2014). The distribution of requirements that relate to manual code and MDSD code is also about 1:2 (J. Derehag, personal communication, November 19, 2014).
-
+\\* 
+\\* 
 MDSD was introduced in Ericsson in 2008. Due to a discontent with the quality of the current code base, the goal to change spread within Ericsson (J. Derehag, personal communication, November 19, 2014). The main factor which spurred the decision to re-architect the system relates to Trouble Reports (TRs) (J. Derehag, personal communication, November 19, 2014). When TRs were resolved, more TRs would arise, which lead to an endless cycle of fixing TRs (J. Derehag, personal communication, November 19, 2014). This characteristic of change is described in Van De Ven \& Poole’s teleological motor \cite{van1995explaining}, which is change that is driven by the discontent with the current way of working and develops through the strive for improvement \cite{van1995explaining}. 
-
+\\* 
+\\* 
 The initial introduction of MDSD at Ericsson mainly concerned changes on an architectural level (moving to a service-based architecture) and the introduction of new frameworks (J. Derehag, personal communication, November 19, 2014). The general consensus, however, appears to be that a new beginning and major changes were needed, even though it would be costly in terms of time and money (J. Derehag, personal communication, November 19, 2014). According to the interview, an assumption that was also held at Ericsson was that in order to do proper mordern software design, MDSD would have to be adopted (J. Derehag, personal communication, November 19, 2014). The MDSD tool that was chosen, was IBM’s Rational Rhapsody \cite{rrf}.
-
+\\* 
+\\* 
 To this date, no subsystems have been changed from manual code to MDSD code (J. Derehag, personal communication, November 19, 2014). The parts of the EPG codebase that are currently labeled as the MDSD-part of the system have been created after the introduction of MDSD, in 2008 (J. Derehag, personal communication, November 19, 2014). 
-
+\\* 
+\\* 
 The introduction of MDSD did not only involve technological changes. Since MDSD was a technology relatively unknown to Ericsson, many new employees were hired to help facilitate the change (J. Derehag, personal communication, November 19, 2014). The hiring of new employees, and the fact that no parts of the Ericsson code base have been changed from manual code to MDSD suggests that there may be a split in the culture regarding the change to MDSD. 
-
+\\* 
+\\* 
 Most of the negative opinions on MDSD in the EPG department of Ericsson relate to the tool \cite{rrf} itself. (J. Derehag, personal communication, November 19, 2014) The most notable issue is the merging of different versions which is a time-consuming process with Rational Rhapsody \cite{rrf}. This may be due to the fact that most of the employees are accustomed to merging text-based files, and not graphical files such as those that compose the models in Rational Rhapsody \cite{rrf}. The positive opinions on MDSD relate to modeling, and the knowledge sharing that visual models allow (J. Derehag, personal communication, November 19, 2014). Another positive effect is that MDSD facilitates code reuse more efficiently (J. Derehag, personal communication, November 19, 2014). 
 
 \end{document}
