@@ -1,0 +1,46 @@
+\documentclass[final_report_innit.tex]{subfiles}
+\begin{document}
+
+\section{Discussion}
+
+In this section, we will discuss the findings of our survey, and attempt to answer our research questions. We will conclude this section with a discussion of our research limitations and our recommendations to Ericsson from the perspective of change management. 
+
+We have distinguished between process and design related activities at Ericsson. This is done so we can discuss the related activities together in logical groupings.
+
+\subsection*{Process}
+
+Feature development, referring to feature toggles and one track in the context of our report, was received more positively by MDSD rather than MC practitioners, according to the results of our survey. The overall response of MDSD participants was positive (average 4.1), whereas MC responses indicated a less satisfactory result (average 2.9). We may assume that due to the complexity of MDSD merge conflicts, feature development was received more positively by the MDSD respondents. However, the underlying cause for the disparity in the results between the MDSD and MC groups may be the ease of implementation, which was scored with an average of 2.2 by MC practitioners, compared to an average of 4.5 by the MDSD practitioners. We encourage further research in this area, in order to detect the difficulties in implementation of feature development for MC.
+
+Cross functional teams, a change that is considered ``finished'', integrated into the culture and successful at EPG, has been given the highest average score by all the survey participants. Our survey results show a slight preference of cross functional teams on behalf of MC over MDSD practitioners. However, our data set has not provided us with any further insight into possible difficulties with cross functional teams in MDSD. 
+
+Continuous integration is another process change that has been well received by both MDSD and MC groups. Similar to one-track, continuous integration was introduced to reduce round-trip-time, the time from the start of development to commit time. We can assume, based on our results that continuous integration has resolved this issue for both groups. As a basis for future research, it is noteworthy to mention the implications of the high change rate introduced by continuous integration. It is possible that at some point, the high change rate will become unmanageable, because of the many changes that are introduced within a short time-frame.
+
+The aforementioned process activities seem applicable to both MDSD and MC practices at EPG. With the exception of the ease of implementation of feature development for the MC practitioners, the overall response from both participating groups in the survey indicates in most cases a positive response to the change, and in fewer cases a neutral response.
+
+\subsection*{Design}
+
+Component testing and Unit testing have been a staple of the design process at Ericsson for quite some time. Given this, we expected there to be an overall trend of positivity towards both in the organisation. On average however, the results showed that the response was, in fact, rather different. The MDSD developers were a little more negative, averaging total scores of 2.6 for unit testing and 3.4 for component testing. MC developers had a more favorable opinion scoring 3.6 and 3.7 respectively. We found this surprising as we expected the manual coders to score higher than the MDSD developers. Our opinion was that modelling tests, specifically unit tests, would be harder to do than writing them manually in code. This was mainly because we felt that the existence of large, tried and tested frameworks would hopefully ease the implementation of tests. Further interesting results were the large disparity in regard to ease of implementation. The MDSD groups rated the ease of implementation at 1.7 and 2.5 which was far lower than their manual coding counterparts who gave them a 3.5 and 3.3 respectively.
+
+It's worth noting that we have no experience with testing in a MDSD environment and a such we had no opinions to drawn upon. This was also evident in research, as we were able to find the existence of frameworks and suggestions, but there was nothing which gave us an indication that it was any easier, or harder than manual unit testing.
+
+Our interviewee had a different opinion compared to what we found in the survey results. They thought that the MDSD teams would actually hold the testing in higher regard than the manual coders. The reason stated was that, \textit{``when MDSD was first introduced many new people came onto the teams who had specific knowledge and expertise with using MDSD''}. These experts would have been well versed in the art of creating tests for use in MDSD as they have always had to do them and in turn would have no real reason to dislike them. The interviewee further expressed that the MDSD developers have had much more experience in writing unit tests than the manual coders. Specifically that, on the \textit{``Manual side, they, typically and historically speaking have had neither unit or component testing''}.
+The interviewee also expressed an opinion that the MDSD developers probably prefer component testing rather than unit testing. Interestingly the interviewee mentioned that the MDSD teams are currently moving away from Unit testing and stated that this could be a reason for their apparent dislike of it.
+
+During the interview process at Ericsson, it became clear that the manual coders do not see a distinction between the two types of
+testing that are currently performed; those are Unit testing and Component testing. This was reinforced by the interviewee who mentioned that \textit{``From a knowledge point of view, they don't equate the two''}. This might have meant that the MDSD developers might have given unit testing an \textit{``underserved low score''} because the MDSD teams prefer component testing whereas the MC developers see no difference between the two. We feel that this could have contributed significantly to the disparity between the groups answers.
+
+In answer to our main hypothesis, we feel, based on the evidence obtained, that unit testing and component testing are applicable to both of the development processes and that their inclusion in the design and development process has been a successful change. The main reason we can make this assumption is primarily because both teams rated the performance, quality and the personal fulfilment that they gained to be between 3.0 and 5.0. This means that the changes either had no effect or only positive effects on the employees. In order to confirm this further, a much deeper and broader study would be required to fully determine if the change has been successful.
+
+\subsection*{Limitations}
+
+As with all studies there are limitations and ours is no exception. Our biggest and most obvious limitation is the fact that we had such a small sample size. The size was further reduced because of usability issues highlighted previously. These limitations mean that we cannot make any generalisations and the assumptions we do make need to be backed up with larger, more in depth studies. Another limitation is the fact that we only focus on a small subset of Ericsson itself. While suitable for this study, focusing solely upon the EPG department is not a good basis to make claims about the whole of Ericsson.
+
+The questionnaires are another source of limitations. The single largest limitation is that we did not decide the distribution of the questionnaires ourselves; our contact at Ericsson distributed them for us. This caused a limitation as we cannot say with any certainty how the questionnaires were distributed and as such we cannot use that information to help us draw any conclusions. Another limitation factor are the questions within the questionnaires themselves. In hindsight the questions could have been more precise and could have probed a little deeper in some areas. One interesting point that we found in research was Kitchenham et al.[Kitchenham] arguing against the types of ordinal scales that we used, especially when converting the questions into numerical data to be used for comparison. Kitchenham et al. suggest that by doing this, there is a risk that the results can lose information [Kitchenham].
+
+Having only one interview is another of the limitations facing our study. Had we the opportunity for more, it might have been possible to draw upon more interesting conclusions from both our results and the interviews. As it stands now we only have the opinion and answers from a single member of the EPG organisation. In order to make sound assumptions and find reasonable conclusions we would obviously need to perform further interviews with a larger spread of developers.
+
+\subsection*{Recomendations (To Ericsson according to CM)}
+
+*Perhaps include a recomendation for comparing MDSD vs CM
+
+\end{document}
