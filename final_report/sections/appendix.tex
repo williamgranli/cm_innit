@@ -1,6 +1,151 @@
 \documentclass[final_report_innit.tex]{subfiles}
 \begin{document}
-
+\appendix
 \section{Appendix A}
 
+\subsection{Questionnaire}
+
+\begin{enumerate}
+	\item General questions
+	\begin{enumerate}
+		\item What is your position? (E.g. developer, tester, manager).
+		\item Do you work in a ``manual coding'' team or in a MDSD team?
+	\end{enumerate}
+	\item Continuous Integration
+	\begin{enumerate}
+		\item How has the introduction of Continuous Integration affected your ability to meet deadlines and deliver on time?
+		\item How do you percieve that Continuous Integration has affected the quality of what You deliver?
+		\item How do you percieve that Continuous Integration has helped you find your role in the group?
+		\item How time consuming has it been for you to adapt to Continuous Integration in your daily work?
+	\end{enumerate}
+	\item Cross-functional Teams
+	\begin{enumerate}
+		\item How has the introduction of Cross-functional Teams affected your ability to meet deadlines and deliver on time?
+		\item How do you percieve that Cross-functional Teams has affected the quality of what You deliver?
+		\item How do you percieve that Cross-functional Teams has helped you find your role in the group?
+		\item How time consuming has it been for you to adapt to Cross-functional Teams in your daily work?
+	\end{enumerate}
+	\item Feature Toggles \& One Track
+	\begin{enumerate}
+		\item How has the introduciton of Feature Toggles \& One Track affected your ability to meet deadlines and deliver on time?
+		\item How do you percieve that Feature Toggles \& One Track has affected the quality of what You deliver?
+		\item How do you percieve that Feature Toggles \& One Track has helped you find your role in the group?
+		\item How time consuming has it been for you to adapt to Feature Toggles \& One Track Teams in your daily work?
+	\end{enumerate}
+	\item Unit Testing
+	\begin{enumerate}
+		\item How has the introduction of Unit Testing affected your ability to meet deadlines and deliver on time?
+		\item How do you percieve that Unit Testing has affected the quality of what You deliver?
+		\item How do you percieve that Unit Testing has helped you find your role in the group?
+		\item How time consuming has it been for you to adapt to the increased Unit Testing in your daily work?
+	\end{enumerate}
+	\item Component Testing
+	\begin{enumerate}
+		\item How has the introduction of Component Testing affected your ability to meet deadlines and deliver on time?
+		\item How do you percieve that Component Testing has affected the quality of what You deliver?
+		\item How do you percieve that Component Testing has helped you find your role in the group?
+		\item How time consuming has it been for you to adapt to the increased Component Testing in your daily work?
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Interview questions}
+
+\begin{enumerate}
+	\item General MDSD questions
+	\begin{enumerate}
+		\item Is there any official/proper word for ``manual coding'' in the context of manual coding vs MDSD?
+		\item What ``is'' MDSD? (Programming paradigm, development method, toolchain).
+		\item What is the distribution between non-MDSD and MDSD?
+		\item On what basis are teams/subsystems selected to change to MDSD?
+		\item Why did you change to MDSD?
+		\item What have been the struggles with MDSD?
+		\item What are the positive sides of MDSD?
+		\item Were any other development methods than MDSD considered?
+		\item Do you think that CI / OT / CFT / UT / CT was implemented as one ``package''?
+		\item Were any of the changes bottom-up?
+	\end{enumerate}
+	\item Change Management theories
+	\begin{enumerate}
+		\item Motors \& Presc/Constr \& Delib/Emergent
+		\begin{enumerate}
+			\item Have the changes in Ericsson had a clear plan? 
+			\item Do you perceive that the changes had a clear plan/goal? 
+		\end{enumerate}
+		\item Driving/Restricting forces
+		\begin{enumerate}
+			\item What is the largest obstacle for change at Ericsson?
+			\item What has been the main driving force for previous changes at Ericsson?
+		\end{enumerate}
+		\item Lewin group stuff
+		\begin{enumerate}
+			\item Are the changes targeted towards individuals or teams?
+		\end{enumerate}
+	\end{enumerate}
+	\item Results Analysis
+	\begin{enumerate}
+		\item MDSD developers seem to prefer One Track and FT a lot more than manual coders do. 
+		\item Manual coders seem to prefer unit testing a lot more than MDSD developers do.
+		\item Manual coders seem to prefer cross functional teams slightly more than MDSD developers do.
+		\item Results related to cross functional teams were the most positive. 
+		\item Component testing was equivalent for both groups while the MDSD group seemed to rate unit testing with a lower score.
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Questionnaire Responses}
+Tables showing collected responses. 1 through 5 correlates to alternatives [[DO WE HAVE TO LIST ALL DIFFERENT SCALES?!?!?!?! ]]. \textit{FALSE} indicates ``not applicable'', ``did not answer''.
+
+\rowcolors{1}{greyOdd}{greyEven}
+\begin{center}
+% Manual coding responses
+\begin{tabular}[b]{l | c | c | c | c | c | c | c | c}
+	& \textbf{MC1} & \textbf{MC2} & \textbf{MC3} & \textbf{MC4} & \textbf{MC5} & \textbf{MC6} & \textbf{MC7} & \textbf{MC8} \\ %\hline
+	\textbf{CI-P} & 4 & 5 & 4 & 4 & 4 & \textit{FALSE} & 3 & 5 \\ %\hline
+	\textbf{CI-Q} & 3 & 4 & 3 & 3 & 4 & \textit{FALSE} & 3 & 5 \\ %\hline
+	\textbf{CI-PF} & 3 & 3 & 3 & 3 & 4 & \textit{FALSE} & 3 & 5 \\ %\hline
+	\textbf{CI-EOI} & 5 & 4 & 4 & 5 & 4 & \textit{FALSE} & 3 & 5 \\ %\hline
+	\textbf{CF-P} & 4 & 5 & 4 & 4 & \textit{FALSE} & \textit{FALSE} & 4 & 5 \\ %\hline
+	\textbf{CF-Q} & 4 & 5 & 2 & 4 & \textit{FALSE} & \textit{FALSE} & 4 & 5 \\ %\hline
+	\textbf{CF-PF} & 3 & 3 & 3 & 3 & \textit{FALSE} & \textit{FALSE} & 5 & 5 \\ %\hline
+	\textbf{CF-EOI} & 4 & 5 & 4 & 5 & \textit{FALSE} & \textit{FALSE} & 4 & 5 \\ %\hline
+	\textbf{FD-P} & 5 & \textit{FALSE} & 4 & \textit{FALSE} & 3 & \textit{FALSE} & 2 & 2 \\ %\hline
+	\textbf{FD-Q} & 4 & \textit{FALSE} & 3 & \textit{FALSE} & 3 & \textit{FALSE} & 3 & 3 \\ %\hline
+	\textbf{FD-PF} & 3 & \textit{FALSE} & 3 & \textit{FALSE} & 3 & \textit{FALSE} & 3 & 3 \\ %\hline
+	\textbf{FD-EOI} & 1 & \textit{FALSE} & 4 & \textit{FALSE} & 2 & \textit{FALSE} & 3 & 1 \\ %\hline
+	\textbf{UT-P} & 2 & 3 & 5 & 5 & 3 & \textit{FALSE} & \textit{FALSE} & 3 \\ %\hline
+	\textbf{UT-Q} & 4 & 3 & 5 & 5 & 4 & \textit{FALSE} & \textit{FALSE} & 3 \\ %\hline
+	\textbf{UT-PF} & 3 & 3 & 3 & 3 & 3 & \textit{FALSE} & \textit{FALSE} & 5 \\ %\hline
+	\textbf{UT-EOI} & 5 & 2 & 2 & 4 & 3 & \textit{FALSE} & \textit{FALSE} & 5 \\ %\hline
+	\textbf{CT-P} & 2 & \textit{FALSE} & 5 & 4 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-Q} & 4 & \textit{FALSE} & 5 & 5 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-PF} & 3 & \textit{FALSE} & 3 & 3 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-EOI} & 4 & \textit{FALSE} & 1 & 5 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\multicolumn{9}{c}{\cellcolor{white} \textbf{Manual coding responses}} \\
+\end{tabular}
+
+%MDSD responses
+\begin{tabular}[b]{l | c | c | c | c | c | c}
+	& \textbf{MDSD1} & \textbf{MDSD2} & \textbf{MDSD3} & \textbf{MDSD4} & \textbf{MDSD5} & \textbf{MDSD6} \\ %\hline
+	\textbf{CI-P} & 4 & 4 & 4 & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CI-Q} & 4 & 4 & 4 & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CI-PF} & 3 & 3 & 3 & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CI-EOI} & 4 & 5 & 4 & 5 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CF-P} & \textit{FALSE} & 4 & 4 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CF-Q} & \textit{FALSE} & 1 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CF-PF} & \textit{FALSE} & 3 & 3 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CF-EOI} & \textit{FALSE} & 5 & 5 & \textit{FALSE} & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{FD-P} & 4 & 4 & 4 & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{FD-Q} & 4 & 5 & 5 & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{FD-PF} & 3 & \textit{FALSE} & \textit{FALSE} & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{FD-EOI} & 4 & 4 & 5 & 5 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{UT-P} & 3 & \textit{FALSE} & \textit{FALSE} & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{UT-Q} & 3 & \textit{FALSE} & \textit{FALSE} & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{UT-PF} & 3 & \textit{FALSE} & \textit{FALSE} & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{UT-EOI} & 2 & 1 & \textit{FALSE} & 2 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-P} & 4 & \textit{FALSE} & \textit{FALSE} & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-Q} & 5 & \textit{FALSE} & \textit{FALSE} & 5 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-PF} & 3 & \textit{FALSE} & \textit{FALSE} & 3 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\textbf{CT-EOI} & 4 & 1 & 1 & 4 & \textit{FALSE} & \textit{FALSE} \\ %\hline
+	\multicolumn{7}{c}{\cellcolor{white} \textbf{MDSD responses}} \\
+\end{tabular}
+\end{center}
 \end{document}
