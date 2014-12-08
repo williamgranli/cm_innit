@@ -96,11 +96,21 @@
 \bibliographystyle{IEEEtran}
 \bibliography{mybib}
 
-%Appendix
 \clearpage
-\onecolumn
-\subfile{./sections/appendix.tex}
-\twocolumn
+
+\begin{appendices}
+  \onecolumn
+  \subfile{./sections/appendixSurvey.tex}
+  \twocolumn
+  \onecolumn
+  \subfile{./sections/appendixSearchTerms.tex}
+  \twocolumn
+\end{appendices}
+%Appendix
+
+
+%Appendix
+
 
 % that's all folks
 \end{document}
