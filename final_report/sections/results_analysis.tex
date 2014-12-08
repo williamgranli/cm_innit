@@ -4,20 +4,19 @@
 
 \section{Results Analysis}
 
-In this section, we will present our survey results, on the basis of which we hope to identify the applicability of process and design activities to the manual coding and MDSD paradigms. Our survey questions have provided us with data on five process and design activities: continuous integration (CI), cross-functional teams (CF), One Track (OT), unit testing (UT) and component testing (CT). We have measured the impact of these activities with regard to performance and productivity, quality of deliverables, personal fulfillment and ease of implementation.
+In this section, we will present our survey results, on the basis of which we hope to identify the applicability of process and design activities to the manual coding and MDSD paradigms. Our survey questions have provided us with data on five process and design activities: continuous integration (CI), cross-functional teams (CFT), One Track (OT), unit testing (UT) and component testing (CT). We have measured the impact of these activities with regard to performance and productivity, quality of deliverables, personal fulfillment and ease of implementation.
 \\
 
 The survey data came from twenty questionnaires which were sent to employees at Ericsson, specifically those working in the EPG department. Our contact at Ericsson distributed them between the manual coding and MDSD practitioners. We received fourteen replies, and out of those six were from the MDSD practitioners and eight from manual coding. Out of those responses we deemed that four responses from the MDSD practitioners were suitable and that seven from the manual coding practitioners were also suitable. Suitability was derived from how complete the answer sets were, for example, most of the responses which were stricken were missing well over 50\% of the answers and thus were unsuited for analysis.
 \\
 
-When analysing the data we decided not to perform any complicated statistical analysis. The primary motivation for this was the small scale of the data set that we had collected; had we collected more, a proper statistical analysis might have been appropriate. To generate our averages, we simply calculated the mean responses from grouping of answers. We generated an average for each of MDSD and manual coding in relation to the design and process questions. We then generated an average of all the questions and finally generated averages from each question block for MDSD and manual coding ending with an average of both of these together.
+When analysing the data we decided not to perform any complicated statistical analysis. The primary motivation for this was the scale of the data set that we had collected; had we collected more, a more extensive statistical analysis would have been appropriate. To generate our averages, we simply calculated the mean responses by grouping the answers according the process and design activities. We generated an average for each of MDSD and manual coding in relation to the design and process questions. We then generated an average of all the questions and finally generated averages from each question block for MDSD and manual coding, ending with an average of both of these together. The final part of the analysis involved an interview with our contact at Ericsson. The interview provided additional insight into some of the design and process elements which they utilise, especially those that we were particularly interested in.
 \\
 
-The final part of the analysis involved an interview with our contact at Ericsson. The interview provided additional insight into some of the design and process elements which they utilise, especially those that we were particularly interested in.
+With regard to CFT, the interviewee seemed to be in agreement with the positive responses of both manual coding and MDSD practitioners, since the interviewee indicated that their change is completed and part of the culture at EPG. However, considering the discrepancy of responses on CI, the interviewee expressed that the discontent of manual coding practitioners was unexpected, since the interviewee believed that CI should be as applicable to the manual coding paradigm as to the MDSD paradigm. Overall, the interview that we conducted with our contact at EPG helped us to formulate our assumptions about the survey results. 
+\\
 \\
 
-With regard to cross-functional teams, the interviewee seemed to be in agreement with the positive responses of both manual coding and MDSD practitioners, since the interviewee indicated that their change is completed and part of the culture at EPG. However, considering the discrepancy of responses on continuous integration, the interviewee expressed that the discontent of manual coding practitioners was unexpected, since the interviewee believed that continuous integration should be as applicable to the manual coding paradigm as to the MDSD paradigm. Overall, the interview that we conducted with our contact at EPG helped us to formulate our assumptions about the survey results. 
-\\
 \begin{tikzpicture}
 \begin{axis}[
 	every axis plot post/.style={/pgf/number format/fixed},
@@ -40,14 +39,14 @@ With regard to cross-functional teams, the interviewee seemed to be in agreement
 \end{axis}
 \end{tikzpicture}
 
-\textit{``Response Average of manual coding and MDSD respondents for Process and Design Activities''}
+\begin{center}\textit{Response Average of manual coding and MDSD respondents for Process and Design Activities}\end{center}
 
 \begin{table}[h]
 \caption{Process Activity Survey Results}
 \centering
 \begin{tabular}{@{}l|c|c|c|@{}}
 \cmidrule(l){2-4}
-                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
+                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDSD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
 \multicolumn{1}{|l|}{CI-P}   & 4.1                          & 4.0                           & 4.1                           \\ \midrule
 \multicolumn{1}{|l|}{CI-Q}   & 3.6                          & 4.0                           & 3.7                           \\ \midrule
 \multicolumn{1}{|l|}{CI-PF}  & 3.4                          & 3.0                           & 3.3                           \\ \midrule
@@ -68,7 +67,7 @@ With regard to cross-functional teams, the interviewee seemed to be in agreement
 \centering
 \begin{tabular}{@{}l|c|c|c|@{}}
 \cmidrule(l){2-4}
-                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
+                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDSD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
 \multicolumn{1}{|l|}{UT-P}   & 3.5                          & 3.0                           & 3.4                           \\ \midrule
 \multicolumn{1}{|l|}{UT-Q}   & 4.0                          & 3.0                           & 3.8                           \\ \midrule
 \multicolumn{1}{|l|}{UT-PF}  & 3.3                          & 3.0                           & 3.3                           \\ \midrule
@@ -85,7 +84,7 @@ With regard to cross-functional teams, the interviewee seemed to be in agreement
 \centering
 \begin{tabular}{@{}c|c|c|c|@{}}
 \cmidrule(l){2-4}
-\multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{avg/activity(MC)} & \multicolumn{1}{l|}{avg/activity(MDD)} & \multicolumn{1}{l|}{avg/activity(all)} \\ \midrule
+\multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{avg/activity(MC)} & \multicolumn{1}{l|}{avg/activity(MDSD)} & \multicolumn{1}{l|}{avg/activity(all)} \\ \midrule
 \multicolumn{1}{|c|}{CI} & 3.9                                & 3.9                                 & 3.9                                 \\ \midrule
 \multicolumn{1}{|c|}{CF} & 4.1                                & 3.6                                 & 4.0                                 \\ \midrule
 \multicolumn{1}{|c|}{OT} & 2.9                                & 4.1                                 & 3.4                                 \\ \midrule
@@ -95,9 +94,9 @@ With regard to cross-functional teams, the interviewee seemed to be in agreement
 \end{table}
 
 Table legend:
-P - Performance
-Q - Quality of what you deliver
-PF - Personal Fulfilment
+P - Performance,
+Q - Quality,
+PF - Personal Fulfilment,
 EOI - Ease of Implementation
 
 \end{document}
