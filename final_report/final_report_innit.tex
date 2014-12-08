@@ -2,30 +2,13 @@
 %% ICSE 2015 co-located events, and ICSE 2015 workshops.
 \documentclass[conference, table]{IEEEtran}
 
-% *** CITATION PACKAGES ***
-%
-%\usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
-% not currently provide for hyperlinked citations.
-% The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
-% The documentation is contained in the cite.sty file itself.
-
 
 %Swedish letters for Pätröck Bäckström
 \usepackage[utf8]{inputenc}
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{url}
+\usepackage[noadjust]{cite}
 %Subfiles (sections)
 \usepackage{subfiles}
 %For generating lorem ipsum
@@ -110,7 +93,7 @@
 \subfile{./sections/conclusion.tex}
 
 %Bibliography
-\bibliographystyle{apalike}
+\bibliographystyle{IEEEtran}
 \bibliography{mybib}
 
 %Appendix
