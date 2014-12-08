@@ -1,5 +1,9 @@
 \documentclass[final_report_innit.tex]{subfiles}
 
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}       % "top" strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}} % "bottom" strut
+\newcommand{\TBstrut}{\Tstrut\Bstrut} % top&bottom struts
+
 \begin{document}
 
 \section{Survey Results Analysis}
@@ -42,55 +46,61 @@ With regard to CFT, the interviewee seemed to be in agreement with the positive 
 \begin{center}\textit{Response Average of manual coding and MDSD respondents for Process and Design Activities}\end{center}
 
 \begin{table}[h]
-\caption{Process Activity Survey Results}
-\centering
-\begin{tabular}{@{}l|c|c|c|@{}}
-\cmidrule(l){2-4}
-                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDSD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
-\multicolumn{1}{|l|}{CI-P}   & 4.1                          & 4.0                           & 4.1                           \\ \midrule
-\multicolumn{1}{|l|}{CI-Q}   & 3.6                          & 4.0                           & 3.7                           \\ \midrule
-\multicolumn{1}{|l|}{CI-PF}  & 3.4                          & 3.0                           & 3.3                           \\ \midrule
-\multicolumn{1}{|l|}{CI-EOI} & 4.3                          & 4.5                           & 4.4                           \\ \midrule
-\multicolumn{1}{|l|}{CFT-P}   & 4.3                          & 4.0                           & 4.3                           \\ \midrule
-\multicolumn{1}{|l|}{CFT-Q}   & 4.0                          & 1.0                           & 3.6                           \\ \midrule
-\multicolumn{1}{|l|}{CFT-PF}  & 3.7                          & 3.0                           & 3.5                           \\ \midrule
-\multicolumn{1}{|l|}{CFT-EOI} & 4.5                          & 5.0                           & 4.6                           \\ \midrule
-\multicolumn{1}{|l|}{OT-P}   & 3.2                          & 4.0                           & 3.6                           \\ \midrule
-\multicolumn{1}{|l|}{OT-Q}   & 3.2                          & 4.5                           & 3.8                           \\ \midrule
-\multicolumn{1}{|l|}{OT-PF}  & 3.0                          & 3.0                           & 3.0                           \\ \midrule
-\multicolumn{1}{|l|}{OT-EOI} & 2.2                          & 4.5                           & 3.2                           \\ \bottomrule
-\end{tabular}
+	\caption{Process Activity Survey Results}
+	\begin{center}
+	\rowcolors{1}{greyOdd}{greyEven}
+		\begin{tabular}{cccc}
+		
+                             & avg(MC) & avg(MDSD) & avg(all) \Tstrut \\ 
+		CI-P   & 4.1 & 4.0 & 4.1 \Tstrut \\ 
+		CI-Q   & 3.6 & 4.0 & 3.7 \Tstrut \\ 
+		CI-PF  & 3.4 & 3.0 & 3.3 \Tstrut \\ 
+		CI-EOI & 4.3 & 4.5 & 4.4 \Tstrut \\ 
+		CF-P   & 4.3 & 4.0 & 4.3 \Tstrut \\ 
+		CF-Q   & 4.0 & 1.0 & 3.6 \Tstrut \\ 
+		CF-PF  & 3.7 & 3.0 & 3.5 \Tstrut \\ 
+		CF-EOI & 4.5 & 5.0 & 4.6 \Tstrut \\ 
+		OT-P   & 3.2 & 4.0 & 3.6 \Tstrut \\ 
+		OT-Q   & 3.2 & 4.5 & 3.8 \Tstrut \\ 
+		OT-PF  & 3.0 & 3.0 & 3.0 \Tstrut \\ 
+		OT-EOI & 2.2 & 4.5 & 3.2 \Tstrut \\ 
+		\end{tabular}
+	\end{center}
 \end{table}
 
 \begin{table}[h]
-\caption{Design Activity Survey Results}
-\centering
-\begin{tabular}{@{}l|c|c|c|@{}}
-\cmidrule(l){2-4}
-                             & \multicolumn{1}{l|}{avg(MC)} & \multicolumn{1}{l|}{avg(MDSD)} & \multicolumn{1}{l|}{avg(all)} \\ \midrule
-\multicolumn{1}{|l|}{UT-P}   & 3.5                          & 3.0                           & 3.4                           \\ \midrule
-\multicolumn{1}{|l|}{UT-Q}   & 4.0                          & 3.0                           & 3.8                           \\ \midrule
-\multicolumn{1}{|l|}{UT-PF}  & 3.3                          & 3.0                           & 3.3                           \\ \midrule
-\multicolumn{1}{|l|}{UT-EOI} & 3.5                          & 1.7                           & 2.9                           \\ \midrule
-\multicolumn{1}{|l|}{CT-P}   & 3.7                          & 4.0                           & 3.8                           \\ \midrule
-\multicolumn{1}{|l|}{CT-Q}   & 4.7                          & 5.0                           & 4.8                           \\ \midrule
-\multicolumn{1}{|l|}{CT-PF}  & 3.0                          & 3.0                           & 3.0                           \\ \midrule
-\multicolumn{1}{|l|}{CT-EOI} & 3.3                          & 2.5                           & 2.9                           \\ \bottomrule
-\end{tabular}
+	\caption{Design Activity Survey Results}
+	\begin{center}
+	\rowcolors{1}{greyOdd}{greyEven}
+		\begin{tabular}{cccc}
+		           & avg(MC) & avg(MDSD) & avg(all) \Tstrut \\ 
+			UT-P   & 3.5 & 3.0 & 3.4 \Tstrut \\  
+			UT-Q   & 4.0 & 3.0 & 3.8 \Tstrut \\ 
+			UT-PF  & 3.3 & 3.0 & 3.3 \Tstrut \\ 
+			UT-EOI & 3.5 & 1.7 & 2.9 \Tstrut \\ 
+			CT-P   & 3.7 & 4.0 & 3.8 \Tstrut \\ 
+			CT-Q   & 4.7 & 5.0 & 4.8 \Tstrut \\ 
+			CT-PF  & 3.0 & 3.0 & 3.0 \Tstrut \\ 
+			CT-EOI & 3.3 & 2.5 & 2.9 \Tstrut \\ 
+		\end{tabular}
+	\end{center}
 \end{table}
 
+
 \begin{table}[h]
-\caption{Design and Process Activity Averages}
-\centering
-\begin{tabular}{@{}c|c|c|c|@{}}
-\cmidrule(l){2-4}
-\multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{avg/activity(MC)} & \multicolumn{1}{l|}{avg/activity(MDSD)} & \multicolumn{1}{l|}{avg/activity(all)} \\ \midrule
-\multicolumn{1}{|c|}{CI} & 3.9                                & 3.9                                 & 3.9                                 \\ \midrule
-\multicolumn{1}{|c|}{CFT} & 4.1                                & 3.6                                 & 4.0                                 \\ \midrule
-\multicolumn{1}{|c|}{OT} & 2.9                                & 4.1                                 & 3.4                                 \\ \midrule
-\multicolumn{1}{|c|}{UT} & 3.6                                & 2.6                                 & 3.3                                 \\ \midrule
-\multicolumn{1}{|c|}{CT} & 3.7                                & 3.4                                 & 3.5                                 \\ \bottomrule
-\end{tabular}
+	\caption{Design and Process Activity Averages}
+	\begin{center}
+	\rowcolors{1}{greyOdd}{greyEven}
+		\begin{tabular}{cccc}
+		           & avg/activity(MC) & avg/activity(MDSD) & avg/activity(all) \Tstrut \\ 
+			CI  & 3.9 & 3.9 & 3.9 \Tstrut \\  
+			CFT & 4.1 & 3.6 & 4.0 \Tstrut \\ 
+			OT  & 2.9 & 4.1 & 3.4 \Tstrut \\ 
+			UT  & 3.6 & 2.6 & 3.3 \Tstrut \\ 
+			CT  & 3.7 & 3.4 & 3.5 \Tstrut \\ 
+
+		\end{tabular}
+	\end{center}
 \end{table}
 
 \smallskip
