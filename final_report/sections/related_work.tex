@@ -5,13 +5,13 @@
 \section{Process and Design Practices in Literature}
 
 \subsection{One Track}
-Hribar et al. \cite{hribar2008first} have presented an overview of Ericsson's approach to OT development which is mainly based on internal Ericsson documentation. Hribar et al. introduce a set of main principles for OT in relation to continuous integration and agile, with the focus mainly set on how to successfully implement and develop with the OT development strategy \cite{hribar2008first}.
+Hribar et al. \cite{hribar2008first} have presented an overview of Ericsson's approach to One Track (OT) development which is mainly based on internal Ericsson documentation. Hribar et al. introduce a set of main principles for OT in relation to continuous integration and agile, with the focus mainly set on how to successfully implement and develop with the OT development strategy \cite{hribar2008first}.
 \\
 
 Despite the fact that a large part of Ericsson's software is developed with MDSD, Hribar et al. do not identify the extent to which OT functions in combination with MDSD compared to manual coding. To the best of our knowledge, the characteristics of MDSD are not explored in OT related literature.
 
 \subsection{Cross-functional Teams}
-Ghobadi describes CFT as people from different subunits of an organisation, with competing social identities and obligations. He continues to explain that such teams shall allow departmental or functional boundaries capable of overlooking bureaucracy, assuring project completion \cite{ghobadi2011challenges}.
+Ghobadi describes cross-functional teams (CFT) as people from different subunits of an organisation, with competing social identities and obligations. He continues to explain that such teams allow departmental or functional boundaries capable of overlooking bureaucracy, assuring project completion \cite{ghobadi2011challenges}.
 \\
 
 Cross-functionality may exist within organisations without the intention to value opinions equally and communicate as CFT, as groups spanning between subunits often exist without explicitly stating so. However, for established CFT, it is vital to equally consider constraints, benefits and obligations from all sub-units \cite{ghobadi2011challenges}. Moreover, Ghobadi elaborates the importance of team leaders, who communicate and moderate their teams, to effectively handle and benefit from emotional conflicts, misunderstandings on tasks, or interdepartmental disagreements \cite{ghobadi2011challenges}.
@@ -20,7 +20,7 @@ Cross-functionality may exist within organisations without the intention to valu
 Marchwinski and Mandzuik similarly describe CFT as ``Those individuals within the firm whose competencies are essential in achieving an optimal evaluation, with one core member from each primary function of the organisation'' \cite{marchwinski2000technical}. Furthermore, they state that teams are formed either proactively or reactively to address specific issues, and also that the key determinant of CFT is a broad communication and interaction across departments \cite{marchwinski2000technical}.
 
 \subsection{Continuous Integration}
-Continuous Integration was first suggested by Booch \cite{booch2006object}. In traditional software processes, integration would be performed sporadically throughout a project to mark the end of an iteration, or to finish a prototype \cite{booch2006object}. In a typical worst case scenario, integration would take place all at once, in a “big bang” method. Such approaches could be problematic, because there is a high risk that different components or modules would require extensive rework to integrate successfully \cite{booch2006object}.
+Continuous integration (CI) was first suggested by Booch \cite{booch2006object}. In traditional software processes, integration would be performed sporadically throughout a project to mark the end of an iteration, or to finish a prototype \cite{booch2006object}. In a typical worst case scenario, integration would take place all at once, in a “big bang” method. Such approaches could be problematic, because there is a high risk that different components or modules would require extensive rework to integrate successfully \cite{booch2006object}.
 \\
 
 Fowler has defined CI as “a software development practice where members of a team  integrate  their  work  frequently,  usually  each person  integrates  at  least  daily  -  leading  to  multiple integrations per day \cite{fowler2006continuous}. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible” \cite{fowler2006continuous}.
@@ -29,7 +29,7 @@ Fowler has defined CI as “a software development practice where members of a t
 This definition tells us that daily integration, automated builds and automated testing are all part of CI. It is therefore crucial for an organization to have the appropriate frameworks prepared before starting CI. To the best of our knowledge, there is no research on CI in MDSD in particular, however CI is one of the core practices of agile.
 
 \subsection{Unit Testing}
-UT is not an exclusive practice of any development paradigm, but is an important part of software development. While not limited to MDSD, the trend of modeling software provides developers and testers with an excellent opportunity to lean on test generation technology, to automatically generate conformance tests from UML diagrams \cite{mussa2009survey}\cite{hartmann2004uml}.  
+Unit testing (UT) is not an exclusive practice of any development paradigm, but is an important part of software development. While not limited to MDSD, the trend of modeling software provides developers and testers with an excellent opportunity to lean on test generation technology, to automatically generate conformance tests from UML diagrams \cite{mussa2009survey}\cite{hartmann2004uml}.  
 \\
 
 Cheon et al. claim that traditional UT is a tedious and cumbersome process, as every method needs to be tested and changes to code may require changes to each test \cite{cheon2002simple}. The test code itself needs to be examined, and one could argue that test code is as likely to be as faulty as the code it is testing \cite{cheon2002simple}. As a solution, Cheon et al. propose unit test automation where possible, by using frameworks which encourage a closer integration of testing. Even with testing frameworks, UT is often a time consuming task that requires test cases to be manually coded and maintained when the code under test changes \cite{cheon2002simple}.
@@ -38,7 +38,7 @@ Cheon et al. claim that traditional UT is a tedious and cumbersome process, as e
 MDSD offers another take on UT; UML has allowed many researchers to use state machine diagrams and sequence diagrams to generate tests, including unit tests \cite{mussa2009survey}. The advantage of model based testing is that it can easily be automated and shifted to earlier stages of development. Model-based test generation allows generation of tests that are independent of other components of the system, aiding the process of unit testing \cite{javed2007automated}.
 
 \subsection{Component Testing}
-While not a concrete practice of MDSD, CT can be an important part of software development, especially when it comes to large and complex systems which are comprised of many components.
+While not a concrete practice of MDSD, component testing (CT) can be an important part of software development, especially when it comes to large and complex systems which are comprised of many components.
 \\
 
 Gao and Jerry describe problems with standard CT \cite{gao2000component}. They state that making the tests reusable is the greatest challenge when using this type of testing. If the tests are created as part of a framework, they become dependent upon that framework. As an alternative, Gao and Jerry suggest using a technique referred to as Built-In-Tests (BIT) \cite{gao2000component}. BIT is an alternative to using a framework, as it involves the use of writing tests into the classes, modules and components themselves. It tends to be cheaper and faster to develop while not requiring an external suite or framework to run.
